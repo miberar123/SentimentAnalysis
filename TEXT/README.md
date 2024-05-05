@@ -16,7 +16,7 @@ GoEmotions is corpus of 58k carefully curated comments extracted from Reddit, an
 | 11     | disapproval    |
 | 12     | disgust        |
 | 13     | embarrassment  |
-| 14     | excitement     |
+| 14     | excitement     |  
 | 15     | fear           |
 | 16     | gratitude      |
 | 17     | grief          |
