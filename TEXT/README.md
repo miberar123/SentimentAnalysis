@@ -1,34 +1,37 @@
 # The data: GoEmotions 
 GoEmotions is corpus of 58k carefully curated comments extracted from Reddit, and labeled for 27 emotion categories or Neutral. The dictionary label - emotion is the following:
 
-1. admiration
-2. amusement
-3. anger
-4. annoyance
-5. approval
-6. caring
-7. confusion
-8. curiosity
-9. desire
-10. disappointment
-11. disapproval
-12. disgust
-13. embarrassment
-14. excitement
-15. fear
-16. gratitude
-17. grief
-18. joy
-19. love
-20. nervousness
-21. optimism
-22. pride
-23. realization
-24. relief
-25. remorse
-26. sadness
-27. surprise
-28. neutral
+| Label | Emotion        |
+|--------|----------------|
+| 1      | admiration     |
+| 2      | amusement      |
+| 3      | anger          |
+| 4      | annoyance      |
+| 5      | approval       |
+| 6      | caring         |
+| 7      | confusion      |
+| 8      | curiosity      |
+| 9      | desire         |
+| 10     | disappointment |
+| 11     | disapproval    |
+| 12     | disgust        |
+| 13     | embarrassment  |
+| 14     | excitement     |
+| 15     | fear           |
+| 16     | gratitude      |
+| 17     | grief          |
+| 18     | joy            |
+| 19     | love           |
+| 20     | nervousness    |
+| 21     | optimism       |
+| 22     | pride          |
+| 23     | realization    |
+| 24     | relief         |
+| 25     | remorse        |
+| 26     | sadness        |
+| 27     | surprise       |
+| 28     | neutral        |
+
 
 The specific dataset used in this project is available at [TensorFlow TFDS](https://www.tensorflow.org/datasets/catalog/goemotions), where it is already divided into 3 subsets of data, for training, testing and validation:
 
