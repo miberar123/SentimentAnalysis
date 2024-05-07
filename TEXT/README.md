@@ -2,35 +2,35 @@
 GoEmotions is corpus of 58k carefully curated comments extracted from Reddit, and labeled for 27 emotion categories or Neutral. The dictionary label - emotion is the following:
 
 | Label | Emotion        |
-|--------|----------------|
-| 1      | admiration     |
-| 2      | amusement      |
-| 3      | anger          |
-| 4      | annoyance      |
-| 5      | approval       |
-| 6      | caring         |
-| 7      | confusion      |
-| 8      | curiosity      |
-| 9      | desire         |
-| 10     | disappointment |
-| 11     | disapproval    |
-| 12     | disgust        |
-| 13     | embarrassment  |
-| 14     | excitement     |  
-| 15     | fear           |
-| 16     | gratitude      |
-| 17     | grief          |
-| 18     | joy            |
-| 19     | love           |
-| 20     | nervousness    |
-| 21     | optimism       |
-| 22     | pride          |
-| 23     | realization    |
-| 24     | relief         |
-| 25     | remorse        |
-| 26     | sadness        |
-| 27     | surprise       |
-| 28     | neutral        |
+|-------|----------------|
+|   0   | admiration     |
+|   1   | amusement      |
+|   2   | anger          |
+|   3   | annoyance      |
+|   4   | approval       |
+|   5   | caring         |
+|   6   | confusion      |
+|   7   | curiosity      |
+|   8   | desire         |
+|   9   | disappointment |
+|  10   | disapproval    |
+|  11   | disgust        |
+|  12   | embarrassment  |
+|  13   | excitement     |  
+|  14   | fear           |
+|  15   | gratitude      |
+|  16   | grief          |
+|  17   | joy            |
+|  18   | love           |
+|  19   | nervousness    |
+|  20   | optimism       |
+|  21   | pride          |
+|  22   | realization    |
+|  23   | relief         |
+|  24   | remorse        |
+|  25   | sadness        |
+|  26   | surprise       |
+|  27   | neutral        |
 
 
 The specific dataset used in this project is available at [TensorFlow TFDS](https://www.tensorflow.org/datasets/catalog/goemotions), where it is already divided into 3 subsets of data, for training, testing and validation:
