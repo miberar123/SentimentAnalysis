@@ -6,6 +6,7 @@ from matplotlib_inline.backend_inline import set_matplotlib_formats
 import pandas as pd
 import seaborn as sns
 from sklearn.model_selection import StratifiedShuffleSplit
+from sklearn.metrics import confusion_matrix
 from tensorflow import keras
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
@@ -83,7 +84,7 @@ def plot_metric_curves(epochs, train_curve, val_curve, train_color, val_color, m
     # Add grid
     sns.set_style("whitegrid")
     # Set figure size
-    plt.figure(figsize=(12,8), dpi=200)
+    plt.figure(figsize=(20,8), dpi=200)
     # Plot curves
     plt.plot(epochs, train_curve, color=train_color, linewidth=2, label=f'Training {metric.lower()}')
     plt.plot(epochs, val_curve, color=val_color, linewidth=2, label=f'Validation {metric.lower()}')
@@ -102,15 +103,17 @@ def plot_metric_curves(epochs, train_curve, val_curve, train_color, val_color, m
     plt.show()
     return
 
-def plot_confusion_matrix(confusion_matrix: np.ndarray, labels: list[str], cmap: str = "Blues"):
+def plot_confusion_matrix(real_values: np.ndarray, predicted_values: np.ndarray, labels: list, cmap: str = "Blues"):
     """
     Plots the confusion matrix.
 
     Args:
     -------
-    confusion_matrix: np.ndarray
-        Confusion matrix.
-    labels: list[str]
+    real_values: np.ndarray
+        Array containing the true labels.
+    predicted_values: np.ndarray
+        Array containing the predicted labels.
+    labels: list
         List of labels.
     cmap: str
         Color map to be used. Default is "Blues".
@@ -119,15 +122,23 @@ def plot_confusion_matrix(confusion_matrix: np.ndarray, labels: list[str], cmap:
     -------
     None
     """
+    # Compute confusion matrix
+    conf_matrix = confusion_matrix(real_values, predicted_values, labels=labels)
+    
     # Set graphics format as svg
-    set_matplotlib_formats('svg')
+    plt.rcParams['figure.figsize'] = (10, 8)
+    plt.rcParams['font.size'] = 12
+    
     # Plot confusion matrix
-    sns.heatmap(confusion_matrix, annot=True, fmt="d", cmap=cmap, vmin=0)
+    sns.heatmap(conf_matrix, annot=True, fmt="d", cmap=cmap, vmin=0)
+    
     # Set title
     plt.title("Confusion matrix", fontsize=20)
+    
     # Set labels
     plt.xlabel("Predicted label", fontsize=15)
     plt.ylabel("True label", fontsize=15)
-    plt.xticks([0.5, 1.5], labels, fontsize=11)
-    plt.yticks([0.5, 1.5], labels, fontsize=11)
+    plt.xticks(np.arange(len(labels)) + 0.5, labels, rotation=45, fontsize=11)
+    plt.yticks(np.arange(len(labels)) + 0.5, labels, rotation=0, fontsize=11)
+    
     plt.show()
