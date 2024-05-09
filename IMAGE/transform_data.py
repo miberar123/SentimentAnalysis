@@ -103,9 +103,16 @@ def reorganise_data(source_dir: str, target_dir: str):
                     )
                     print(f"[INFO] Moved {image_file} to {target_folder}")
 
+    shutil.rmtree(os.path.join(source_dir, "labels"), ignore_errors=True)
+    print(f"[INFO] Removed labels folder in {source_dir}")
 
-if __name__ == "__main__":
+
+def main():
     join_test_valid()
 
     reorganise_data("./data/test", "./data/test")
     reorganise_data("./data/train", "./data/train")
+
+
+if __name__ == "__main__":
+    main()
