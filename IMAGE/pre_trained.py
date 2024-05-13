@@ -53,7 +53,7 @@ def main():
 
     history = model.fit(
         train_generator,
-        steps_per_epoch=100,
+        steps_per_epoch=50,
         epochs=5,
         validation_data=validation_generator,
         validation_steps=50,
