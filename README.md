@@ -18,6 +18,7 @@ Sentiment analysis is a vital task in natural language processing (NLP) that inv
 
 + BERT (Bidirectional Encoder Representations from Transformers): BERT, based on the transformer architecture, has revolutionized NLP by capturing bidirectional contextual information from text. It excels in understanding the semantics and nuances of language, making it highly effective for sentiment analysis tasks.
 
+
 ### Approach:
 
 We will preprocess the text data by tokenizing and encoding it using techniques like word embeddings or subword embeddings. These embeddings capture semantic information about words, which is crucial for downstream tasks like sentiment analysis.
@@ -25,6 +26,7 @@ We will preprocess the text data by tokenizing and encoding it using techniques 
 
 ## Image Data Analysis
 
++ CNN from Scratch: This involves training a CNN architecture from scratch, starting with randomly initialized parameters. While this approach allows for customization and fine-tuning to specific datasets, it often requires large amounts of annotated data and considerable computational resources for training.
 
 
 ## Applications
