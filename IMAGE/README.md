@@ -25,7 +25,17 @@ The specific dataset used in this project is available at [TensorFlow TFDS](http
 # Models
 The models we have used to classify our dataset are as folloing ones:
 
-- **CNN**: We have trained a cnn using the pytorch library, where our accuracy has been 0.42 using the model that best qualified of all those we have tested, (these models are stored in the folder models/models_cnn). In spite of being a low accuracy, this corresponds to the probelam we are dealing with since the task of classifying by an image 8 emotions is a task that a human would find difficult to perform.
+- **CNN**: We have trained a cnn using the pytorch library, where our accuracy has been 0.42 using the model that best qualified of all those we have tested, (these models are stored in the folder models/models_cnn as you can see in the following image):
+![Models in our locals directories](readme_images/models.png)
+The accuracy obtained of each one are the following ones:
+![Accuracy of model regnet_y_400mf with 9 un-freeze layers and 10 epochs](readme_images/accuracy_regnet_y_400mf.png)
+![Accuracy of model resnet101 with 9 un-freeze layers and 10 epochs](readme_images/accuracy_resnet101.png)
+![Accuracy of model resnet50 with 9 un-freeze layers and 10 epochs](readme_images/accuracy_resnet50.png)
+![Accuracy of model resnet152 with 9 un-freeze layers and 10 epochs](readme_images/accuracy_resnet152.png)
+
+This models couldn´t be uploaded to the repo beacuse git has a limitation that doesn´t allow to push file biger the 25 mb.
+
+In spite of being a low accuracy, this corresponds to the probelam we are dealing with since the task of classifying by an image 8 emotions is a task that a human would find difficult to perform.
 
 - **CNN from Scratch**: In the from scartch model we have configured the layers we want ourselves. After testing two configurations since one of them gave overtraining in the model with the second one an accuracy of 0.38 has been achieved.
 
