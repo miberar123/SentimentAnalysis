@@ -26,7 +26,11 @@ We will preprocess the text data by tokenizing and encoding it using techniques 
 
 ## Image Data Analysis
 
++ CNN (Convolutional Neural Network): CNNs are a foundational architecture for image analysis. Within CNNs, we utilized variants like ResNet-50, ResNet-101, and RegNetY-400MF. These CNN architectures are characterized by their deep layers with skip connections, enabling effective feature extraction and hierarchical representation learning. They have been widely adopted for image classification, object detection, and image segmentation tasks.
+
 + CNN from Scratch: This involves training a CNN architecture from scratch, starting with randomly initialized parameters. While this approach allows for customization and fine-tuning to specific datasets, it often requires large amounts of annotated data and considerable computational resources for training.
+
++ Pre-trained Models: Leveraging pre-trained models such as those trained on large-scale image datasets like ImageNet provides a shortcut to effective feature extraction. These models have already learned rich hierarchical representations from vast amounts of data, enabling transfer learning for downstream tasks like image classification, object detection, and image generation.
 
 
 ## Applications
