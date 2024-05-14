@@ -1,5 +1,6 @@
 # Sentiment Analysis
 
+
 ## Introduction
 
 Sentiment analysis is a vital task in natural language processing (NLP) that involves determining the sentiment expressed in a piece of text or an image. It has various applications in social media monitoring, customer feedback analysis, and market research, among others. In our project, we aim to leverage advanced machine learning techniques to classify sentiments in both text and image data.
